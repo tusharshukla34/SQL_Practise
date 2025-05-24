@@ -4,7 +4,7 @@ CREATE TABLE Departments (
     department_id INT PRIMARY KEY,
     department_name VARCHAR(100)
 );
-
+show tables;
 INSERT INTO Departments VALUES
 (1, 'Sales'),
 (2, 'Marketing'),
