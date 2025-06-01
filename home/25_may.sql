@@ -2,6 +2,7 @@ create database groupby;
 use groupby;
 
 
+
 CREATE TABLE Departments (
     department_id INT PRIMARY KEY,
     department_name VARCHAR(100)
@@ -36,7 +37,7 @@ INSERT INTO Employees VALUES
 
 
 
-
+show tables;
 select * from departments;
 select * from employees;
 
@@ -92,8 +93,8 @@ using(department_id) group by department_name having avg_salary > 60000;
 
 # 9.Find total numbers of departments that have more than 2 employees.
 
-select department_name , count(employee_id) as total_emp from departments inner join employees 
-using(department_id) group by department_name having  total_emp > 1;
+select count(department_name)  as total_dep from departments inner join employees 
+using(department_id) group by employee_id having  total_emp > 1;
 
 
 select * from departments;

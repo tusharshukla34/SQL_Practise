@@ -1,4 +1,5 @@
 create database groupby;
+drop database groupby;
 use groupby;
 CREATE TABLE Departments (
     department_id INT PRIMARY KEY,
